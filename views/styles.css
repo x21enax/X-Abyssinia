@@ -1,0 +1,17 @@
+/* Apply a background with the Abyssinian flag's colors */
+body {
+    background: linear-gradient(to bottom, green, yellow, red);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style the text in the middle */
+h1 {
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px rgba(205, 0, 0, 0.5);
+}

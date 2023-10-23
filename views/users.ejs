@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User List</title>
+</head>
+<body>
+    <h1>User List</h1>
+    <h2>Add users</h2>
+    <form action="/adduser" method="post">
+        <input type="text" name="name" placeholder="Name" >
+        <button type="submit">Add User</button>
+    </form>
+    <ul>
+        <% users.forEach(user => { %>
+            <li><%= user.name %> (Email: <%= user.email %>)</li>
+        <% }); %>
+    </ul>
+</body>
+</html>
